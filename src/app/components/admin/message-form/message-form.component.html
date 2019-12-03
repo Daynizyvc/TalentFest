@@ -1,9 +1,9 @@
 
-<form (ngSubmit)="addMessage()">
-    <!-- <input type="text" name="area" ([ngModel])="message.area" > -->
-    <!-- <input type="text" name="text" [(ngModel)]="message.text"> -->
+<div >
+    <input type="text" name="area" id="area" ([ngModel])="messageA.area" placeholder="Area" >
+    <input type="text" name="text" id="text" ([ngModel])="messageA.text" placeholder="Escribe el SMS aquí">
 
-    <button type="submit">
+    <button (click)="addMessage()">
         GUARDAR
     </button>
-</form>
+</div>
